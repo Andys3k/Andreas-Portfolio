@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* PulseScoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* PulseScoreApp.swift */; };
+		A10000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000002 /* ContentView.swift */; };
+		A10000000000000000000003 /* SportsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* SportsModels.swift */; };
+		A10000000000000000000004 /* MockSportsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* MockSportsData.swift */; };
+		A10000000000000000000005 /* ScoreboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* ScoreboardViewModel.swift */; };
+		A10000000000000000000006 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000006 /* HomeView.swift */; };
+		A10000000000000000000007 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000007 /* ScoreboardView.swift */; };
+		A10000000000000000000008 /* LeagueHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000008 /* LeagueHubView.swift */; };
+		A10000000000000000000009 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000009 /* SectionHeader.swift */; };
+		A1000000000000000000000A /* LiveMatchCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000A /* LiveMatchCard.swift */; };
+		A1000000000000000000000B /* UpcomingMatchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000B /* UpcomingMatchRow.swift */; };
+		A1000000000000000000000C /* LeagueStripCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000C /* LeagueStripCard.swift */; };
+		A1000000000000000000000D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000D /* Assets.xcassets */; };
+		A1000000000000000000000E /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000F /* AppConfiguration.swift */; };
+		A1000000000000000000000F /* LiveScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000010 /* LiveScoreService.swift */; };
+		A10000000000000000000010 /* SportMonksLiveScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000011 /* SportMonksLiveScoreService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* PulseScoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseScoreApp.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A20000000000000000000003 /* SportsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsModels.swift; sourceTree = "<group>"; };
+		A20000000000000000000004 /* MockSportsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSportsData.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* ScoreboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardViewModel.swift; sourceTree = "<group>"; };
+		A20000000000000000000006 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A20000000000000000000007 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
+		A20000000000000000000008 /* LeagueHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueHubView.swift; sourceTree = "<group>"; };
+		A20000000000000000000009 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		A2000000000000000000000A /* LiveMatchCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMatchCard.swift; sourceTree = "<group>"; };
+		A2000000000000000000000B /* UpcomingMatchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingMatchRow.swift; sourceTree = "<group>"; };
+		A2000000000000000000000C /* LeagueStripCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueStripCard.swift; sourceTree = "<group>"; };
+		A2000000000000000000000D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2000000000000000000000E /* PulseScore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseScore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000000000000000000000F /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		A20000000000000000000010 /* LiveScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveScoreService.swift; sourceTree = "<group>"; };
+		A20000000000000000000011 /* SportMonksLiveScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportMonksLiveScoreService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A30000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A40000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A40000000000000000000002 /* PulseScore */,
+				A40000000000000000000009 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A40000000000000000000002 /* PulseScore */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000001 /* PulseScoreApp.swift */,
+				A20000000000000000000002 /* ContentView.swift */,
+				A40000000000000000000003 /* Models */,
+				A40000000000000000000004 /* Data */,
+				A4000000000000000000000A /* Configuration */,
+				A4000000000000000000000B /* Services */,
+				A40000000000000000000005 /* ViewModels */,
+				A40000000000000000000006 /* Views */,
+				A2000000000000000000000D /* Assets.xcassets */,
+			);
+			path = PulseScore;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000003 /* SportsModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000004 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000004 /* MockSportsData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000005 /* ScoreboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000006 /* HomeView.swift */,
+				A20000000000000000000007 /* ScoreboardView.swift */,
+				A20000000000000000000008 /* LeagueHubView.swift */,
+				A40000000000000000000007 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000007 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000009 /* SectionHeader.swift */,
+				A2000000000000000000000A /* LiveMatchCard.swift */,
+				A2000000000000000000000B /* UpcomingMatchRow.swift */,
+				A2000000000000000000000C /* LeagueStripCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A40000000000000000000009 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000E /* PulseScore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A2000000000000000000000F /* AppConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		A4000000000000000000000B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A20000000000000000000010 /* LiveScoreService.swift */,
+				A20000000000000000000011 /* SportMonksLiveScoreService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50000000000000000000001 /* PulseScore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70000000000000000000002 /* Build configuration list for PBXNativeTarget "PulseScore" */;
+			buildPhases = (
+				A30000000000000000000002 /* Sources */,
+				A30000000000000000000001 /* Frameworks */,
+				A30000000000000000000003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+			);
+			name = PulseScore;
+			packageProductDependencies = (
+			);
+			productName = PulseScore;
+			productReference = A2000000000000000000000E /* PulseScore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A60000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2602;
+				LastUpgradeCheck = 2602;
+				TargetAttributes = {
+					A50000000000000000000001 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = A70000000000000000000001 /* Build configuration list for PBXProject "PulseScore" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A40000000000000000000001;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A40000000000000000000009 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A50000000000000000000001 /* PulseScore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A30000000000000000000003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1000000000000000000000D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A30000000000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000000002 /* ContentView.swift in Sources */,
+				A10000000000000000000008 /* LeagueHubView.swift in Sources */,
+				A10000000000000000000009 /* SectionHeader.swift in Sources */,
+				A1000000000000000000000B /* UpcomingMatchRow.swift in Sources */,
+				A10000000000000000000010 /* SportMonksLiveScoreService.swift in Sources */,
+				A10000000000000000000006 /* HomeView.swift in Sources */,
+				A10000000000000000000005 /* ScoreboardViewModel.swift in Sources */,
+				A1000000000000000000000C /* LeagueStripCard.swift in Sources */,
+				A1000000000000000000000E /* AppConfiguration.swift in Sources */,
+				A10000000000000000000001 /* PulseScoreApp.swift in Sources */,
+				A10000000000000000000007 /* ScoreboardView.swift in Sources */,
+				A10000000000000000000003 /* SportsModels.swift in Sources */,
+				A10000000000000000000004 /* MockSportsData.swift in Sources */,
+				A1000000000000000000000F /* LiveScoreService.swift in Sources */,
+				A1000000000000000000000A /* LiveMatchCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A80000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		A80000000000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A80000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PulseScore/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PulseScore;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreashorak.PulseScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A80000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PulseScore/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = PulseScore;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andreashorak.PulseScore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70000000000000000000001 /* Build configuration list for PBXProject "PulseScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000000000000000000001 /* Debug */,
+				A80000000000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70000000000000000000002 /* Build configuration list for PBXNativeTarget "PulseScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A80000000000000000000003 /* Debug */,
+				A80000000000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A60000000000000000000001 /* Project object */;
+}

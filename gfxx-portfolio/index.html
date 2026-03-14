@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andreas / GFXX Portfolio</title>
+    <meta
+      name="description"
+      content="High-end neon portfolio website for Andreas / GFXX, graphic designer and video editor."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow-one"></div>
+    <div class="page-glow page-glow-two"></div>
+    <div class="noise-overlay"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#top" data-cursor="hover">
+        <span class="brand-label">Andreas</span>
+        <span class="brand-mark">GFXX</span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav">
+          <a href="portfolio.html" data-cursor="hover" data-i18n="navWork">Work</a>
+          <a href="#services" data-cursor="hover" data-i18n="navServices">Services</a>
+          <a href="#about" data-cursor="hover" data-i18n="navAbout">About</a>
+          <a href="#contact" data-cursor="hover" data-i18n="navContact">Contact</a>
+        </nav>
+        <button class="lang-toggle" type="button" data-cursor="hover" aria-pressed="false">CZ</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy" data-reveal>
+          <h1>
+            <span>ANDREAS</span>
+            <span data-i18n="heroRoleOne">GRAPHIC DESIGNER</span>
+            <span data-i18n="heroRoleTwo">VIDEO EDITOR</span>
+          </h1>
+          <div class="hero-meta">
+            <p>
+              <span data-i18n="instagramLabel">Instagram:</span>
+              <a
+                href="https://instagram.com/andreas.gfxx"
+                target="_blank"
+                rel="noreferrer"
+                data-cursor="hover"
+              >
+                @andreas.gfxx
+              </a>
+            </p>
+            <a class="ghost-button" href="portfolio.html" data-cursor="hover" data-i18n="viewWork">View Selected Work</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" data-reveal data-delay="1">
+          <div class="hero-panel-inner">
+            <div class="panel-line"></div>
+            <p class="panel-kicker" data-i18n="panelKicker">GFXX Studio</p>
+            <p class="panel-text">
+              <span data-i18n="panelText">Graphic design and video editing for creators, brands, and social media content.</span>
+            </p>
+            <div class="panel-tags">
+              <span data-i18n="tagDesign">Graphic Design</span>
+              <span data-i18n="tagEdit">Video Editing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell" id="work">
+        <div class="section-heading" data-reveal>
+          <p class="section-index">01</p>
+          <h2 data-i18n="selectedWork">Selected Work</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="work-preview" data-reveal>
+          <div class="work-grid work-grid-preview">
+            <article class="project-card wide" data-cursor="hover">
+              <div class="project-media poster-collage poster-collage-cover">
+                <img src="assets/posters/Artboard 1.png" alt="PerfectPain poster design 1" />
+                <img src="assets/posters/Artboard 2.png" alt="PerfectPain poster design 2" />
+                <img src="assets/posters/Artboard 3.png" alt="PerfectPain poster design 3" />
+                <img src="assets/posters/Artboard 4.png" alt="PerfectPain poster design 4" />
+                <img src="assets/posters/Artboard 5.png" alt="PerfectPain poster design 2" />
+                <img src="assets/posters/Artboard 6.png" alt="PerfectPain poster design 6" />
+                <img src="assets/posters/Artboard 7.png" alt="PerfectPain poster design 7" />
+                <img src="assets/posters/Artboard 8.png" alt="PerfectPain poster design 8" />
+                <img src="assets/posters/Artboard 9.png" alt="PerfectPain poster design 9" />
+                <img src="assets/posters/Artboard 10.png" alt="PerfectPain poster design 10" />
+                <img src="assets/posters/Artboard 11.png" alt="PerfectPain poster design 11" />
+                <img src="assets/posters/Artboard 12.png" alt="PerfectPain poster design 12" />
+                <img src="assets/posters/Artboard 13.png" alt="PerfectPain poster design 13" />
+                <img src="assets/posters/Artboard 14.png" alt="PerfectPain poster design 14" />
+                <img src="assets/posters/Artboard 15.png" alt="PerfectPain poster design 15" />
+                <img src="assets/posters/Artboard 17.png" alt="PerfectPain poster design 17" />
+              </div>
+              <div class="project-overlay">
+                <p class="project-category" data-i18n="project1Category">Graphic Design</p>
+                <h3 data-i18n="project1Title">PerfectPain Poster Collage</h3>
+                <p class="project-detail" data-i18n="project1Detail">Poster design collection created for the clothing brand PerfectPain.</p>
+              </div>
+            </article>
+
+            <article class="project-card tall" data-cursor="hover">
+              <video
+                class="project-media project-video"
+                src="https://res.cloudinary.com/drpccovtv/video/upload/v1773570265/NoSleepMain_2_vhx7fb.mp4"
+                muted
+                loop
+                playsinline
+                preload="none"
+              ></video>
+              <div class="project-overlay">
+                <p class="project-category" data-i18n="project2Category">Video Editing</p>
+                <h3 data-i18n="project2Title">NoSleep Festival Edit</h3>
+                <p class="project-detail" data-i18n="project2Detail">Festival performance edit featuring Yzomandias and PTK.</p>
+              </div>
+            </article>
+
+            <article class="project-card wide project-card-landscape" data-cursor="hover">
+              <video
+                class="project-media project-video project-video-contain"
+                src="assets/final version 1.mp4"
+                muted
+                loop
+                playsinline
+                preload="none"
+              ></video>
+              <div class="project-overlay">
+                <p class="project-category" data-i18n="project3Category">Video Editing</p>
+                <h3 data-i18n="project3Title">Uwantsam x David Nunes</h3>
+                <p class="project-detail" data-i18n="project3Detail">Video edit for Uwantsam and David Nunes.</p>
+              </div>
+            </article>
+
+            <article class="project-card tall" data-cursor="hover">
+              <video
+                class="project-media project-video project-video-contain"
+                src="https://res.cloudinary.com/drpccovtv/video/upload/v1773570923/final_vysvedceni_colors_1_ezr5vh.mp4"
+                muted
+                loop
+                playsinline
+                preload="none"
+              ></video>
+              <div class="project-overlay">
+                <p class="project-category" data-i18n="project4Category">Video Editing</p>
+                <h3 data-i18n="project4Title">VibeEvents x StudentVibes</h3>
+                <p class="project-detail" data-i18n="project4Detail">Event promo edit created for VibeEvents and StudentVibes.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="work-preview-overlay">
+            <p class="work-preview-copy" data-i18n="workPreviewCopy">A preview of selected projects. Open the full portfolio to explore all work.</p>
+            <a class="cta-button" href="portfolio.html" data-cursor="hover" data-i18n="viewMore">View More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell" id="services">
+        <div class="section-heading" data-reveal>
+          <p class="section-index">02</p>
+          <h2 data-i18n="servicesTitle">Services</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-reveal data-cursor="hover">
+            <span class="service-number">01</span>
+            <h3 data-i18n="service1Title">Graphic Design</h3>
+            <p data-i18n="service1Detail">Bold visuals, campaign systems, typography-led concepts, and premium brand assets.</p>
+          </article>
+          <article class="service-card" data-reveal data-delay="1" data-cursor="hover">
+            <span class="service-number">02</span>
+            <h3 data-i18n="service2Title">Video Editing</h3>
+            <p data-i18n="service2Detail">Fast-cut edits, cinematic pacing, social-first storytelling, and polished post-production.</p>
+          </article>
+          <article class="service-card" data-reveal data-delay="2" data-cursor="hover">
+            <span class="service-number">03</span>
+            <h3 data-i18n="service3Title">Motion Graphics</h3>
+            <p data-i18n="service3Detail">Animated type, transitions, UI-inspired sequences, and motion systems with impact.</p>
+          </article>
+          <article class="service-card" data-reveal data-delay="3" data-cursor="hover">
+            <span class="service-number">04</span>
+            <h3 data-i18n="service4Title">Social Media Content</h3>
+            <p data-i18n="service4Detail">Scroll-stopping templates, launch assets, reels packaging, and platform-native creative.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell about-section" id="about">
+        <div class="section-heading" data-reveal>
+          <p class="section-index">03</p>
+          <h2 data-i18n="aboutTitle">About</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="about-layout">
+          <div class="about-copy" data-reveal>
+            <p data-i18n="aboutP1">My name is Andreas, a young graphic designer and video editor focused on creating bold, modern visuals for brands, creators, artists, and digital content.</p>
+            <p data-i18n="aboutP2">The focus is simple: build visuals that feel sharp, cinematic, and unmistakably current for brands, creators, and campaigns.</p>
+          </div>
+
+          <div class="about-metrics" data-reveal data-delay="1">
+            <div class="metric-card">
+              <span data-i18n="metric1Label">Service</span>
+              <strong data-i18n="metric1Value">Graphic Design</strong>
+            </div>
+            <div class="metric-card">
+              <span data-i18n="metric2Label">Service</span>
+              <strong data-i18n="metric2Value">Video Editing</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell" id="process">
+        <div class="section-heading" data-reveal>
+          <p class="section-index">04</p>
+          <h2 data-i18n="processTitle">Process</h2>
+          <div class="divider"></div>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card" data-reveal data-cursor="hover">
+            <div class="process-icon icon-idea"></div>
+            <h3 data-i18n="process1Title">Idea</h3>
+            <p data-i18n="process1Detail">Concept framing, references, and creative direction.</p>
+          </article>
+          <article class="process-card" data-reveal data-delay="1" data-cursor="hover">
+            <div class="process-icon icon-design"></div>
+            <h3 data-i18n="process2Title">Design</h3>
+            <p data-i18n="process2Detail">Typography, layout, composition, and visual system building.</p>
+          </article>
+          <article class="process-card" data-reveal data-delay="2" data-cursor="hover">
+            <div class="process-icon icon-edit"></div>
+            <h3 data-i18n="process3Title">Edit</h3>
+            <p data-i18n="process3Detail">Pacing, transitions, sound sync, and motion refinement.</p>
+          </article>
+          <article class="process-card" data-reveal data-delay="3" data-cursor="hover">
+            <div class="process-icon icon-deliver"></div>
+            <h3 data-i18n="process4Title">Deliver</h3>
+            <p data-i18n="process4Detail">Platform-ready exports and polished final presentation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell contact-section" id="contact">
+        <div class="contact-card" data-reveal>
+          <p class="section-index">05</p>
+          <h2 data-i18n="contactTitle">Let's work together.</h2>
+          <p class="contact-copy" data-i18n="contactCopy">Available for visual identity work, campaign edits, motion graphics, and social-first creative.</p>
+          <div class="contact-links">
+            <a
+              href="https://instagram.com/andreas.gfxx"
+              target="_blank"
+              rel="noreferrer"
+              data-cursor="hover"
+            >
+              <span data-i18n="contactInstagram">Instagram</span>
+            </a>
+            <a href="mailto:andreas.work@email.cz" data-cursor="hover">andreas.work@email.cz</a>
+          </div>
+          <a class="cta-button" href="mailto:andreas.work@email.cz" data-cursor="hover" data-i18n="startProject">Start a Project</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
