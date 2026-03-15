@@ -13,6 +13,10 @@ const lightboxInfo = document.querySelector(".lightbox-info");
 const lightboxClose = document.querySelector(".lightbox-close");
 const lightboxSoundToggle = document.querySelector(".lightbox-sound-toggle");
 const langToggle = document.querySelector(".lang-toggle");
+const portfolioJumpNav = document.querySelector(".portfolio-jumpnav");
+const portfolioJumpNavToggle = document.querySelector(".portfolio-jumpnav-toggle");
+const portfolioJumpNavList = document.querySelector(".portfolio-jumpnav-list");
+const portfolioJumpNavLabel = document.querySelector(".portfolio-jumpnav-label");
 const languageStorageKey = "gfxx-portfolio-language";
 
 const translations = {
@@ -48,6 +52,9 @@ const translations = {
     project5Category: "Video Editing",
     project5Title: "David Nunes AI Visual",
     project5Detail: "Video for artist David Nunes featuring AI elements.",
+    project6Category: "Graphic Design",
+    project6Title: "Tony214 Cover Art",
+    project6Detail: "Cover art for Tony214.",
     servicesTitle: "Services",
     service1Title: "Graphic Design",
     service1Detail: "Bold visuals, campaign systems, typography-led concepts, and premium brand assets.",
@@ -114,6 +121,9 @@ const translations = {
     project5Category: "Video Editing",
     project5Title: "David Nunes AI Visual",
     project5Detail: "Video pro umělce David Nunes, které obsahuje AI prvky.",
+    project6Category: "Grafický Design",
+    project6Title: "Tony214 Cover Art",
+    project6Detail: "Cover art pro Tony214.",
     servicesTitle: "Služby",
     service1Title: "Grafický Design",
     service1Detail: "Výrazné vizuály, kampanové systémy, typografické koncepty a premium brand assety.",
@@ -152,6 +162,92 @@ const translations = {
 
 let activeLightboxVideo = null;
 let activeLightboxCard = null;
+let portfolioJumpNavScrollHandler = null;
+
+const slugify = (value) =>
+  value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+
+const closePortfolioJumpNav = () => {
+  if (!portfolioJumpNav || !portfolioJumpNavToggle) {
+    return;
+  }
+
+  portfolioJumpNav.classList.remove("is-open");
+  portfolioJumpNavToggle.setAttribute("aria-expanded", "false");
+};
+
+const buildPortfolioJumpNav = () => {
+  if (!portfolioJumpNavList) {
+    return;
+  }
+
+  const links = [];
+  portfolioJumpNavList.innerHTML = "";
+
+  if (portfolioJumpNavLabel) {
+    portfolioJumpNavLabel.textContent = translations[currentLanguage]?.portfolioPageTitle || "Portfolio";
+  }
+
+  projectCards.forEach((card, index) => {
+    const title = card.querySelector("h3")?.textContent?.trim();
+    if (!title) {
+      return;
+    }
+
+    const cardId = `portfolio-post-${index + 1}-${slugify(title)}`;
+    card.id = cardId;
+
+    const item = document.createElement("li");
+    item.className = "portfolio-jumpnav-item";
+
+    const link = document.createElement("a");
+    link.className = "portfolio-jumpnav-link";
+    link.href = `#${cardId}`;
+    link.dataset.cursor = "hover";
+    link.textContent = title;
+
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      card.scrollIntoView({ behavior: "smooth", block: "start" });
+      closePortfolioJumpNav();
+    });
+
+    item.appendChild(link);
+    portfolioJumpNavList.appendChild(item);
+    links.push({ card, link });
+  });
+
+  if (!links.length) {
+    return;
+  }
+
+  if (portfolioJumpNavScrollHandler) {
+    window.removeEventListener("scroll", portfolioJumpNavScrollHandler);
+  }
+
+  portfolioJumpNavScrollHandler = () => {
+    const viewportAnchor = window.innerHeight * 0.28;
+    let activeEntry = links[0];
+
+    links.forEach((entry) => {
+      const rect = entry.card.getBoundingClientRect();
+      if (rect.top <= viewportAnchor) {
+        activeEntry = entry;
+      }
+    });
+
+    links.forEach(({ link }) => link.classList.remove("is-active"));
+    activeEntry.link.classList.add("is-active");
+  };
+
+  portfolioJumpNavScrollHandler();
+  window.addEventListener("scroll", portfolioJumpNavScrollHandler, { passive: true });
+};
 
 window.addEventListener("load", () => {
   body.classList.add("is-loaded");
@@ -179,6 +275,8 @@ const applyLanguage = (lang) => {
       openLightbox(activeLightboxCard);
     }
   }
+
+  buildPortfolioJumpNav();
 };
 
 let currentLanguage = "en";
@@ -419,6 +517,22 @@ lightboxBackdrop?.addEventListener("click", closeLightbox);
 lightboxClose?.addEventListener("click", closeLightbox);
 lightboxPanel?.addEventListener("click", (event) => event.stopPropagation());
 
+portfolioJumpNavToggle?.addEventListener("click", () => {
+  const willOpen = !portfolioJumpNav.classList.contains("is-open");
+  portfolioJumpNav.classList.toggle("is-open", willOpen);
+  portfolioJumpNavToggle.setAttribute("aria-expanded", String(willOpen));
+});
+
+document.addEventListener("click", (event) => {
+  if (!portfolioJumpNav || !portfolioJumpNav.classList.contains("is-open")) {
+    return;
+  }
+
+  if (event.target instanceof Element && !event.target.closest(".portfolio-jumpnav")) {
+    closePortfolioJumpNav();
+  }
+});
+
 langToggle?.addEventListener("click", () => {
   currentLanguage = currentLanguage === "en" ? "cs" : "en";
   try {
@@ -432,6 +546,7 @@ langToggle?.addEventListener("click", () => {
 window.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeLightbox();
+    closePortfolioJumpNav();
   }
 });
 
